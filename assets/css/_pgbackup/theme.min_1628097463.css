@@ -24758,3 +24758,7 @@ a:hover .text-hover-primary {
         opacity: 1;
     }
 }
+
+.transparent_hero {
+    background-image: url('assets/img/custom/hero/hero_test.jpg');
+}

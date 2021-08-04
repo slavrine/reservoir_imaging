@@ -1,0 +1,17 @@
+.bg_img-hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    background-color: #666666;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+}
+
+.text-black-100 {
+    color: rgba(0,0,0,1)!important;
+}

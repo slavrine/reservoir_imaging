@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/dzsparallaxer.css">
         <link rel="stylesheet" href="./assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
         <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
-        <link rel="stylesheet" href="./assets/css/custom.css">
         <!-- CSS Front Template -->
         <link rel="stylesheet" href="./assets/css/theme.min.css">
     </head>
@@ -133,6 +132,7 @@
                                     <!-- End Home -->
                                     <!-- Pages -->
                                     <li class="hs-has-sub-menu navbar-nav-item">
+                                        <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Pages</a>
                                         <!-- Pages - Submenu -->
                                         <div id="pagesSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
                                             <!-- Account -->
@@ -235,6 +235,7 @@
                                     <!-- End Pages -->
                                     <!-- Blog -->
                                     <li class="hs-has-sub-menu navbar-nav-item">
+                                        <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Blog</a>
                                         <!-- Blog - Submenu -->
                                         <div id="blogSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
                                             <a class="dropdown-item " href="./blog-journal.html">Journal</a>
@@ -254,8 +255,43 @@
                         "maxWidth": "440px"
                       }
                     }'>
-                                        <a id="shopMegaMenu" class="nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false">Home</a>
+                                        <a id="shopMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle " href="javascript:;" aria-haspopup="true" aria-expanded="false">Shop</a>
                                         <!-- Shop - Mega Menu -->
+                                        <div class="hs-mega-menu dropdown-menu hs-position-right" aria-labelledby="shopMegaMenu">
+                                            <div class="mega-menu-body">
+                                                <span class="d-block h5">Shop Elements</span>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <a class="dropdown-item " href="./shop-classic.html">Classic</a>
+                                                        <a class="dropdown-item " href="./shop-categories.html">Categories</a>
+                                                        <a class="dropdown-item " href="./shop-categories-sidebar.html">Categories Sidebar</a>
+                                                        <a class="dropdown-item " href="./shop-products-grid.html">Products Grid</a>
+                                                        <a class="dropdown-item " href="./shop-products-list.html">Products List</a>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <a class="dropdown-item " href="./shop-single-product.html">Single Product</a>
+                                                        <a class="dropdown-item " href="./shop-empty-cart.html">Empty Cart</a>
+                                                        <a class="dropdown-item " href="./shop-cart.html">Cart</a>
+                                                        <a class="dropdown-item " href="./shop-checkout.html">Checkout</a>
+                                                        <a class="dropdown-item " href="./shop-order-completed.html">Order Completed</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Mega Menu Banner -->
+                                            <div class="navbar-product-banner">
+                                                <div class="d-flex align-items-end">
+                                                    <img class="img-fluid mr-4" src="./assets/img/mockups/img4.png" alt="Image Description">
+                                                    <div class="navbar-product-banner-content">
+                                                        <div class="mb-4">
+                                                            <span class="h4 d-block text-primary">Win T-shirt</span>
+                                                            <p>Win one of our Front brand T-shirts.</p>
+                                                        </div>
+                                                        <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="./shop-classic.html">Learn More <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Mega Menu Banner -->
+                                        </div>
                                         <!-- End Shop - Mega Menu -->
                                     </li>
                                     <!-- End Shop -->
@@ -322,12 +358,11 @@
         <main id="content" role="main">
             <!-- Hero Section -->
             <!-- Hero Section -->             
-            <div class="bg-img-hero hero_transparent position-relative transparent_hero" style="background-image: url('assets/img/custom/hero/hero_test_whiten.jpg');"> 
+            <div class="position-relative bg-img-hero" style="background-image: url('assets/img/custom/hero/hero_test.jpg');"> 
                 <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem"> 
                     <div class="d-none d-md-block w-lg-50"> 
-                        <h1>Microseismic Monitoring.</h1>
-                        <h1>Borehole Acqusition.</h1> 
-                        <h2 class="h1 text-primary">Serving O&amp;G industry since <span class="text-black-100">2005</span>.</h2> 
+                        <h1>You're in good company.</h1> 
+                        <h2 class="h1 text-primary">Join millions of businesses on Front.</h2> 
                     </div>                     
                 </div>                 
                 <!-- SVG Background -->                 
@@ -345,38 +380,45 @@
                     <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n11"> 
                         <!-- Logo -->                         
                         <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto"> 
-                            <img class="avatar-img" src="assets/img/custom/hero/ca.png" alt="Image Description"> 
+                            <img class="avatar-img" src="../../assets/img/160x160/img18.png" alt="Image Description"> 
                         </div>                         
                         <!-- End Logo -->                         
                     </div>                     
                     <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n8"> 
                         <!-- Logo -->                         
                         <div class="bg-white shadow-soft rounded-circle p-6 mx-auto"> 
-                            <img class="avatar-img" src="assets/img/custom/hero/us.png" alt="Image Description" width="160" height="160"> 
+                            <img class="avatar-img" src="../../assets/img/160x160/img17.png" alt="Image Description" width="160" height="160"> 
                         </div>                         
                         <!-- End Logo -->                         
                     </div>                     
                     <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n4"> 
                         <!-- Logo -->                         
                         <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto"> 
-                            <img class="avatar-img" src="assets/img/custom/hero/om.png" alt="Image Description"> 
+                            <img class="avatar-img" src="../../assets/img/160x160/img13.png" alt="Image Description"> 
                         </div>                         
                         <!-- End Logo -->                         
                     </div>                     
                     <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n7"> 
                         <!-- Logo -->                         
                         <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto"> 
-                            <img class="avatar-img" src="assets/img/custom/hero/sa.png" alt="Image Description"> 
+                            <img class="avatar-img" src="../../assets/img/160x160/img14.png" alt="Image Description"> 
                         </div>                         
                         <!-- End Logo -->                         
                     </div>                     
                     <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n11"> 
                         <!-- Logo -->                         
                         <div class="bg-white shadow-soft rounded-circle p-6 mx-auto"> 
-                            <img class="avatar-img" src="assets/img/custom/hero/nz.png" alt="Image Description" width="160" height="160"> 
+                            <img class="avatar-img" src="../../assets/img/160x160/img16.png" alt="Image Description" width="160" height="160"> 
                         </div>                         
                         <!-- End Logo -->                         
-                    </div>                                          
+                    </div>                     
+                    <div class="col-3 col-lg-2 d-none d-sm-inline-block"> 
+                        <!-- Logo -->                         
+                        <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto"> 
+                            <img class="avatar-img" src="../../assets/img/160x160/img15.png" alt="Image Description"> 
+                        </div>                         
+                        <!-- End Logo -->                         
+                    </div>                     
                 </div>                 
             </div>             
             <!-- End Clients Section -->
